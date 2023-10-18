@@ -1,0 +1,84 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logIn-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 350px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px 10px lightgray;
+  margin: 5% auto;
+  min-height: 400px;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form .material-symbols-outlined{
+  font-size: 28px;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+input{
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+}
+
+.camera-icon{
+  font-size: 60px;
+  padding: 20px;
+  opacity: 0.5;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background: lightblue;
+}
+
+.logIn-form button{
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background: lightblue;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.logIn-form button:hover{
+  background: rgb(128, 185, 204);
+}
+
+.error{
+  color: red;
+  margin-top: 5px;
+}
+
+#eye{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input:focus{
+  outline: none;
+}
+
+.input-div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+}
+
+.copyright{
+  margin-top: 20px;
+}
