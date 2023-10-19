@@ -12,10 +12,11 @@ export function LonInForm() {
   const submit = (values) => {
     if (values.email !== "athreyan@gmail.com") {
       setEmail(true);
-    } else if (values.password !== "123456") {
+    } else if (values.password !== '123456') {
       setPassword(true);
     } else {
-      console.log("success");
+      const token = localStorage.setItem('token','athreyan@gmail.com')
+      navigate("/data-table")
     }
   };
 
@@ -26,8 +27,8 @@ export function LonInForm() {
 
   const formik = useFormik({
     initialValues: {
-      email: "athreyan@gmail.com",
-      password: "123456",
+      email: "",
+      password: '',
     },
     validationSchema: validation,
     onSubmit: (values) => submit(values),
@@ -50,7 +51,7 @@ export function LonInForm() {
           />
         </div>
         {formik.errors.email && formik.touched.email ? (
-          <p className="error">Invalid Credentials</p>
+          <p className="error">Enter Valid Email</p>
         ) : null}
         {email ? <p className="error">Invalid Credentials</p> : null}
         <div className="input-div">
@@ -83,7 +84,7 @@ export function LonInForm() {
           )}
         </div>
         {formik.errors.password && formik.touched.password ? (
-          <p className="error">Invalid Credentials</p>
+          <p className="error">Wrong Password</p>
         ) : null}
         {password ? <p className="error">Invalid Credentials</p> : null}
         <button type="submit">Log In</button>

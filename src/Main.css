@@ -1,0 +1,68 @@
+.main-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.main-div img{
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+}
+
+.nav-but-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.nav-button{
+  background: rgb(52, 52, 52);
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button:hover{
+  background: rgb(0, 0, 0);
+}
+
+.arrow-nav{
+  margin: 0 20px;
+  padding: 5px 20px;
+  background: grey;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* ----Data-Table---------------------- */
+
+table{
+  border-collapse: collapse;
+  width: 90%;
+  margin: 30px auto;
+}
+
+td,th{
+  padding: 5px;
+  border: 0.5px solid grey;
+}
+
+th{
+  font-size: 14px;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: lightblue;
+}
