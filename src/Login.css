@@ -24,6 +24,7 @@ form{
 form .material-symbols-outlined{
   font-size: 28px;
   opacity: 0.5;
+  /* color: white; */
   font-weight: 100;
 }
 
@@ -37,24 +38,27 @@ input{
 .camera-icon{
   font-size: 60px;
   padding: 20px;
-  opacity: 0.5;
+  opacity: 0.8;
+  color: white;
   margin: auto;
   border-radius: 50%;
   object-fit: cover;
-  background: lightblue;
+  background-image: linear-gradient(to left , #F97794 , #623AA2);
 }
 
 .logIn-form button{
   padding: 10px;
   font-size: 14px;
   border: none;
-  background: lightblue;
+  background-image: linear-gradient(to left , #F97794 , #623AA2);
+  color: white;
+  font-weight: 500;
   cursor: pointer;
   margin-top: 40px;
 }
 
 .logIn-form button:hover{
-  background: rgb(128, 185, 204);
+  background-image: linear-gradient(to left , #e24769 , #421f7a);
 }
 
 .error{
@@ -77,6 +81,8 @@ input:focus{
   gap: 5px;
   border-bottom: 1px solid grey;
   margin-top: 20px;
+  padding: 0 10px;
+  background-color: white;
 }
 
 .copyright{
