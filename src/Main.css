@@ -44,12 +44,19 @@
   cursor: pointer;
 }
 
+.logout{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+}
+
 
 /* ----Data-Table---------------------- */
 
 table{
   border-collapse: collapse;
-  width: 90%;
+  max-width: 80%;
   margin: 30px auto;
 }
 
