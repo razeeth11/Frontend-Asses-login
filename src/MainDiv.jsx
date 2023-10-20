@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 export function MainDiv() {
   const [flexVisible, setFlexVisible] = useState(true);
   const [treeList, setTreeList] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const logout = ()=>{
+  const logout = () => {
     localStorage.removeItem("token");
-    navigate("/")
-  }
+    navigate("/");
+  };
 
   const [images, setImages] = useState([
     "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
@@ -39,16 +39,25 @@ export function MainDiv() {
           Flex Images
         </button>
         <button onClick={() => setFlexVisible(false)} className="nav-button">
-          Data
+          Data Table
         </button>
-        <button title='Log Out' onClick={logout} className="nav-button logout">
+        <button title="Log Out" onClick={logout} className="nav-button logout">
           <span class="material-symbols-outlined">logout </span>
         </button>
       </div>
       {flexVisible ? (
         <div className="main-div">
           {images.map((item, index) => (
-            <img key={index} src={item} />
+            <div className="image-div">
+              <img key={index} src={item} />
+              <div className="image-div-content">
+                <p className="image-div-title">Image - {index + 1}</p>
+                <p className="image-div-para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum, iure.
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       ) : (

@@ -1,4 +1,4 @@
-.main-div{
+.main-div {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -7,13 +7,38 @@
   margin: 30px;
 }
 
-.main-div img{
+.main-div img {
   object-fit: cover;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
-.nav-but-div{
+.image-div-content {
+  padding: 10px;
+}
+
+.image-div {
+  max-width: 250px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 20px 10px rgba(128, 128, 128, 0.384);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.image-div:hover{
+  scale: 1.03;
+}
+
+.image-div-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-but-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +46,7 @@
   margin-top: 30px;
 }
 
-.nav-button{
+.nav-button {
   background: rgb(52, 52, 52);
   border: none;
   font-size: 16px;
@@ -31,11 +56,11 @@
   cursor: pointer;
 }
 
-.nav-button:hover{
+.nav-button:hover {
   background: rgb(0, 0, 0);
 }
 
-.arrow-nav{
+.arrow-nav {
   margin: 0 20px;
   padding: 5px 20px;
   background: grey;
@@ -44,28 +69,28 @@
   cursor: pointer;
 }
 
-.logout{
+.logout {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-left: 100px;
 }
 
-
 /* ----Data-Table---------------------- */
 
-table{
+table {
   border-collapse: collapse;
   max-width: 80%;
   margin: 30px auto;
 }
 
-td,th{
+td,
+th {
   padding: 5px;
   border: 0.5px solid grey;
 }
 
-th{
+th {
   font-size: 14px;
 }
 

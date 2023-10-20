@@ -24,7 +24,6 @@ form{
 form .material-symbols-outlined{
   font-size: 28px;
   opacity: 0.5;
-  /* color: white; */
   font-weight: 100;
 }
 
@@ -38,7 +37,6 @@ input{
 .camera-icon{
   font-size: 60px;
   padding: 20px;
-  opacity: 0.8;
   color: white;
   margin: auto;
   border-radius: 50%;
