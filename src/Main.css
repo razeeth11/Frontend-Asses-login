@@ -82,19 +82,23 @@ table {
   border-collapse: collapse;
   max-width: 80%;
   margin: 30px auto;
+  border: 1px solid grey;
 }
 
 td,
 th {
-  padding: 5px;
-  border: 0.5px solid grey;
+  padding: 10px;
+  border-bottom: 0.5px solid grey;
 }
 
-th {
-  font-size: 14px;
+th{
+  font-size: 16px;
+  background-color: rgb(85, 85, 85);
+  color: white;
 }
 
 tr:hover {
   cursor: pointer;
-  background-color: lightblue;
+  background-color: rgb(85, 85, 85);
+  color: white;
 }
